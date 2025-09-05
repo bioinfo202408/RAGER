@@ -7,7 +7,7 @@
 1. [Quick start](#quick-start)
 2. [Preprocess RNAseq data](https://github.com/bioinfo202408/RAGER/blob/main/Preprocess_RNAseq_data.md)
 3. [Preprocess ATACseq data](https://github.com/bioinfo202408/RAGER/blob/main/Preprocess_ATACseq_data.md) 
-4. [Joint analysis](https://github.com/bioinfo202408/RAGER/edit/blob/main/Joint_analysis.md)
+4. [Joint analysis](https://github.com/bioinfo202408/RAGER/blob/main/Joint_analysis.md)
 5. [Custom analysis](https://github.com/bioinfo202408/RAGER/blob/main/Custom_analysis.md)
 
 # **Quick start**
@@ -143,6 +143,7 @@ gunzip -c test2_R2.fq.gz > ~/PROJECT/RAGER/human/datasets/ATACseq/fastqfile/test
 In short, please unzip the raw data to *_1.fastq *_2.fastq format and place in their respective folders.
 
 ### **The subsequent analysis steps should be referred to the readme files of each process.**
+
 
 
 
