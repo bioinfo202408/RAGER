@@ -4,7 +4,7 @@
 **RAGER** is a computational platform, that integrates the popular bioinformatics tools in an automated thread for joint mining of RNA-seq and ATAC-seq data. RAGER facilitates integrative analysis of transcriptome and chromatin accessibility by providing an automated workflow that minimizes the need for bioinformatics expertise and significantly reduces processing time. We demonstrate RAGER's utility for novel biological discovery by characterizing the transcriptome and chromatin accessibility of two recently published datasets.
 
 ## Table of Contents
-1. [Quick start](https://github.com/yjliu15924/RAGER/blob/main/RAGER_github/README.md#quick-start)
+1. [Quick start](https://github.com/bioinfo202408/RAGER/edit/main/README.md#quick-start)
 2. [Preprocess RNAseq data](https://github.com/yjliu15924/RAGER/blob/main/RAGER_github/Scripts/Preprocess_RNAseq/RNAseq_analysis.md)
 3. [Preprocess ATACseq data](https://github.com/yjliu15924/RAGER/blob/main/RAGER_github/Scripts/Preprocess_ATACseq/ATACseq_analysis.md) 
 4. [Joint analysis](https://github.com/yjliu15924/RAGER/blob/main/RAGER_github/Scripts/Joint_analysis/Joint_analysis.md)
@@ -143,6 +143,7 @@ gunzip -c test2_R2.fq.gz > ~/PROJECT/RAGER/human/datasets/ATACseq/fastqfile/test
 In short, please unzip the raw data to *_1.fastq *_2.fastq format and place in their respective folders.
 
 ### **The subsequent analysis steps should be referred to the readme files of each process.**
+
 
 
 
