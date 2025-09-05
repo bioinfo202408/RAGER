@@ -1,0 +1,81 @@
+# config.yaml
+
+# === File paths configuration ===
+paths:
+  base_dir: "datasets"
+  scripts_dir: "scripts"
+
+  atacseq_dir: "datasets/ATACseq"
+  atacseq_bowtie2_dir: "datasets/ATACseq/bowtie2file"
+  rnaseq_dir: "datasets/RNAseq"
+
+  promoter_analysis_dir: "datasets/Promoter_region_analysis"
+  enhancer_analysis_dir: "datasets/Enhancer_region_analysis"
+
+  geneanno_dir: "reference"
+  geneanno_bed: "reference/geneanno/gencode.vM25.annotation.bed"
+  enhancer_bed: "reference/enhanno/EnhancerAltasv2.0_eRNA.bed"
+
+  jaspar_raw: "datasets/JASPAR2024_CORE_vertebrates_non-redundant_pfms_meme.txt"
+  jaspar_dir: "datasets/JASPAR2024_CORE"
+  tf_mapping_file: "datasets/Mus_musculus_TF.txt"
+
+# Input files configuration
+input_files:
+  up_peak_csv: "datasets/ATACseq/macs2file/ATAC_A_vs_ATAC_N_peak.csv"
+  down_peak_csv: "datasets/ATACseq/macs2file/ATAC_N_vs_ATAC_A_peak.csv"
+  
+  up_peak_xls: "datasets/ATACseq/macs2file/ATAC_A_vs_ATAC_N/ATAC_A_vs_ATAC_N_peaks.xls"
+  down_peak_xls: "datasets/ATACseq/macs2file/ATAC_N_vs_ATAC_A/ATAC_N_vs_ATAC_A_peaks.xls"
+  
+  deg_csv: "datasets/RNAseq/stringtiefile/A_vs_N_DEG.csv"
+
+# === Sample information ===
+samples:
+  SRR4032269:
+    group: "ATAC_A"
+    label: "ATACA1"
+  SRR4032270:
+    group: "ATAC_A"
+    label: "ATACA2"
+  SRR4032271:
+    group: "ATAC_N"
+    label: "ATACN1"
+  SRR4032272:
+    group: "ATAC_N"
+    label: "ATACN2"
+
+# === Analysis parameters ===
+params:
+  # Differential expression thresholds
+  log2fc_up: 1
+  log2fc_down: -1
+  padj: 0.05
+
+  # computeMatrix parameters (for promoter and enhancer)
+  computematrix:
+    before: 1000
+    after: 1000
+    bin_size: 10
+    processors: 5
+
+  # Group analysis settings (for correlation and enhancer analysis)
+  group_analysis:
+    column_ranges: ["1:200", "201:400", "401:600", "601:800"]
+    sample_labels: ["ATACA1", "ATACA2", "ATACN1", "ATACN2"]
+    treatment_group: ["ATACA1", "ATACA2"]
+    control_group: ["ATACN1", "ATACN2"]
+
+  # enrichment_analysis directories
+  enrichment_analysis:
+    promoter_up_dir: "datasets/Promoter_region_analysis/Enrichment_analysis/Up"
+    promoter_down_dir: "datasets/Promoter_region_analysis/Enrichment_analysis/Down"
+    enhancer_up_dir: "datasets/Enhancer_region_analysis/Enrichment_analysis/Up"
+    enhancer_down_dir: "datasets/Enhancer_region_analysis/Enrichment_analysis/Down"
+
+  # regulation_analysis directories
+  regulation_analysis:
+    promoter_up_dir: "datasets/Promoter_region_analysis/Regulation_analysis/Up"
+    promoter_down_dir: "datasets/Promoter_region_analysis/Regulation_analysis/Down"
+    enhancer_up_dir: "datasets/Enhancer_region_analysis/Regulation_analysis/Up"
+    enhancer_down_dir: "datasets/Enhancer_region_analysis/Regulation_analysis/Down"
