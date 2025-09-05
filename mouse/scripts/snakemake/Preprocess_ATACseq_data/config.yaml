@@ -1,0 +1,93 @@
+# config.yaml
+
+# File paths configuration
+paths:
+  base_dir: "datasets"
+  scripts_dir: "scripts"
+  atacseq_base_dir: "datasets/ATACseq"
+  fastq_dir: "datasets/ATACseq/fastqfile"
+  qc_dir: "datasets/ATACseq/quality_control_file"
+  bowtie2_dir: "datasets/ATACseq/bowtie2file"
+  macs2_dir: "datasets/ATACseq/macs2file"
+  index_dir: "reference/bowtie2index"
+  geneanno_dir: "reference/geneanno"
+
+# Reference files
+references:
+  gtf_file: "reference/geneanno/gencode.vM25.annotation.gtf"
+  bed_file: "reference/geneanno/gencode.vM25.annotation.bed"
+  bowtie2_index: "GRCm38"
+
+# Sample information
+samples:
+  SRR4032269: 
+    type: "paired"
+    group: "ATAC_A"
+    label: "ATAC_A1"
+  SRR4032270: 
+    type: "paired"
+    group: "ATAC_A"
+    label: "ATAC_A2"
+  SRR4032271: 
+    type: "paired"
+    group: "ATAC_N"
+    label: "ATAC_N1"
+  SRR4032272: 
+    type: "paired"
+    group: "ATAC_N"
+    label: "ATAC_N2"
+
+# Analysis parameters
+params:
+  # Quality control parameters
+  trim_galore:
+    phred: 33
+    quality: 25
+    length_paired: 35
+    length_single: 30
+    stringency_paired: 3
+    stringency_single: 1
+  
+  # Alignment parameters
+  bowtie2:
+    threads: 5
+    index_name: "GRCm38"
+  
+  # Coverage analysis
+  bamcoverage:
+    bin_size: 10
+    processors: 5
+    normalization: "BPM"
+  
+  # Matrix computation
+  computematrix:
+    before: 1000
+    after: 1000
+    bin_size: 10
+    processors: 10
+  
+  # Peak calling parameters
+  macs2:
+    genome_size: "mm"
+    qvalue: 0.05
+    keep_dup: "all"
+  
+  # Group analysis
+  analysis_groups:
+    group_names: ["ATAC_A", "ATAC_N"]
+    sample_labels: ["ATAC_A1", "ATAC_A2", "ATAC_N1", "ATAC_N2"]
+    column_ranges: ["1:200", "201:400", "401:600", "601:800"]
+    sample_replicates: [2, 2]
+    sample_order: [1, 2, 3, 4]
+  
+  # Differential analysis
+  differential_analysis:
+    treatment_group: "ATAC_A"
+    control_group: "ATAC_N"
+    treatment_samples: ["SRR4032269", "SRR4032270"]
+    control_samples: ["SRR4032271", "SRR4032272"]
+
+# Output subdirectories
+output_dirs:
+  bowtie2_subdir: "bowtie2file"
+  macs2_subdir: "macs2file"

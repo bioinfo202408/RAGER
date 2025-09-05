@@ -1,0 +1,72 @@
+# config.yaml
+
+paths:
+  base_dir: "datasets"
+  scripts_dir: "scripts"
+  rnaseq_base_dir: "datasets/RNAseq"
+  fastq_dir: "datasets/RNAseq/fastqfile"
+  qc_dir: "datasets/RNAseq/quality_control_file"
+  hisat2_dir: "datasets/RNAseq/hisat2file"
+  stringtie_dir: "datasets/RNAseq/stringtiefile"
+  index_dir: "reference/hisat2index"
+
+# 参考文件
+references:
+  gtf_file: "reference/geneanno/gencode.vM25.annotation.gtf"
+  bed_file: "reference/mm10_GENCODE_VM25_basic.bed"
+
+# 样本信息
+samples:
+  SRR4032350: 
+    type: "paired"
+    group: "RNA_A"
+    label: "RNA_A1"
+  SRR4032351: 
+    type: "paired"
+    group: "RNA_A"
+    label: "RNA_A2"
+  SRR4032352: 
+    type: "paired"
+    group: "RNA_N"
+    label: "RNA_N1"
+  SRR4032353: 
+    type: "paired"
+    group: "RNA_N"
+    label: "RNA_N2"
+
+# 分析参数
+params:
+  # 质控参数
+  trim_galore:
+    phred: 33
+    quality: 25
+    length_paired: 35
+    length_single: 30
+    stringency_paired: 3
+    stringency_single: 1
+  
+  # 比对参数
+  hisat2:
+    threads: 5
+    index_name: "GRCm38"
+  
+  # 分组信息
+  analysis_groups:
+    group_names: ["RNA_A", "RNA_N"]
+    sample_replicates: [2, 2]
+  
+  # 差异表达分析
+  deseq2:
+    control_group: "RNA_N"
+    treatment_group: "RNA_A"
+
+# 计算资源
+resources:
+  default_threads: 10
+  hisat2_threads: 5
+  memory_gb: 100
+
+# 输出目录结构
+output_dirs:
+  hisat2_subdir: "hisat2file"
+  stringtie_subdir: "stringtiefile"

@@ -1,0 +1,16 @@
+library(ChIPseeker)
+library(TxDb.Mmusculus.UCSC.mm10.knownGene)
+txdb <- TxDb.Mmusculus.UCSC.mm10.knownGene
+library(org.Mm.eg.db)
+args <- commandArgs(trailingOnly = TRUE)
+options(ChIPseeker.ignore_1st_exon = T)
+options(ChIPseeker.ignore_1st_intron = T)
+options(ChIPseeker.ignore_downstream = T)
+options(ChIPseeker.ignore_promoter_subcategory = T)
+files <- list(treatment_vs_ctr=args[1],ctr_vs_treatment=args[2])
+peakAnnoList <- lapply(files, annotatePeak, TxDb=txdb, tssRegion=c(-1000,1000))
+
+df1 <- as.data.frame(peakAnnoList[[1]])
+df2 <- as.data.frame(peakAnnoList[[2]])
+write.csv(df1, file = args[3], row.names = FALSE)
+write.csv(df2, file = args[4], row.names = FALSE)
