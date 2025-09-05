@@ -5,10 +5,10 @@
 
 ## Table of Contents
 1. [Quick start](https://github.com/bioinfo202408/RAGER/edit/main/README.md#quick-start)
-2. [Preprocess RNAseq data](https://github.com/yjliu15924/RAGER/blob/main/RAGER_github/Scripts/Preprocess_RNAseq/RNAseq_analysis.md)
-3. [Preprocess ATACseq data](https://github.com/yjliu15924/RAGER/blob/main/RAGER_github/Scripts/Preprocess_ATACseq/ATACseq_analysis.md) 
-4. [Joint analysis](https://github.com/yjliu15924/RAGER/blob/main/RAGER_github/Scripts/Joint_analysis/Joint_analysis.md)
-5. [Custom analysis](https://github.com/yjliu15924/RAGER/blob/main/RAGER_github/Scripts/Custom_analysis/Custom_analysis.md)
+2. [Preprocess RNAseq data](https://github.com/bioinfo202408/RAGER/edit/main/Preprocess_RNAseq_data.md)
+3. [Preprocess ATACseq data](https://github.com/bioinfo202408/RAGER/edit/main/Preprocess_ATACseq_data.md) 
+4. [Joint analysis](https://github.com/bioinfo202408/RAGER/edit/main/Joint_analysis.md)
+5. [Custom analysis](https://github.com/bioinfo202408/RAGER/edit/main/Custom_analysis.md)
 
 # **Quick start**
 ## System requirements:
@@ -143,6 +143,7 @@ gunzip -c test2_R2.fq.gz > ~/PROJECT/RAGER/human/datasets/ATACseq/fastqfile/test
 In short, please unzip the raw data to *_1.fastq *_2.fastq format and place in their respective folders.
 
 ### **The subsequent analysis steps should be referred to the readme files of each process.**
+
 
 
 
