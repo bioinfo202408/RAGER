@@ -141,8 +141,26 @@ gunzip -c test2_R1.fq.gz > ~/PROJECT/RAGER/human/datasets/ATACseq/fastqfile/test
 gunzip -c test2_R2.fq.gz > ~/PROJECT/RAGER/human/datasets/ATACseq/fastqfile/test2_2.fastq
 ```
 In short, please unzip the raw data to *_1.fastq *_2.fastq format and place in their respective folders.
+## **Comparative Features of Bioinformatics Tools for Epigenomics Data Analysis** 
+| Classification          | Trait                                   | DiffBind | PRADA | TRAPLINE | esATAC | CoBRA | RAGER |
+|-------------------------|-----------------------------------------|----------|-------|----------|--------|-------|-------|
+| **Basic Information**   | Year                                    | 2011     | 2014  | 2016     | 2018   | 2021  | 2025  |
+|                         | Workflow Engine                         | -        | -     | Galaxy   | -      | Snakemake | Snakemake |
+|                         | Containerization Support                | -        | -     | -        | -      | ✓     | ✓     |
+| **Data Preprocessing Module** | Standard Quality Control and Comparison | ✓        | ✓     | ✓        | ✓      | -     | ✓     |
+|                         | Peak Calling                            | ✓        | -     | -        | ✓      | ✓     | ✓     |
+| **Advanced Module**     | Joint Analysis                          | -        | -     | -        | -      | ✓     | ✓     |
+|                         | Custom Analysis                         | -        | -     | -        | ✓      | ✓     | ✓     |
+|                         | Motif Enrichment                        | ✓        | -     | -        | ✓      | ✓     | ✓     |
+|                         | Differential Analysis                   | ✓        | ✓     | ✓        | -      | -     | ✓     |
+|                         | Chromatin State Enrichment              | ✓        | -     | -        | ✓      | ✓     | ✓     |
+| **User Experience**     | One-click Report Generation             | -        | ✓     | ✓        | -      | -     | ✓     |
+|                         | Detailed instruction with case studies  | -        | ✓     | ✓        | -      | ✓     | ✓     |
+
+---
 
 ### **The subsequent analysis steps should be referred to the readme files of each process.**
+
 
 
 
