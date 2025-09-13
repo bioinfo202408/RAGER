@@ -28,6 +28,3 @@ foreach my $motiffile (@motiffiles){
 		}
 	}
 }
-
-# perl tf_motif_enrich_analysis.pl --fastafile /data_p2/cjxProj/geneanno/promoter_seqs.fa --outputdir /data_p2/cjxProj/datasets/motifenrichdata --motifdir /data_p2/cjxProj/geneanno/JASPAR2024_CORE
-
