@@ -68,9 +68,9 @@ wget -c https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/GRC
 
 gunzip ./reference/GRCh38.p14.genome.fa.gz
 #Index reference geneme
-bowtie2-build --threads 5 GRCh38.p14.genome.fa ./reference/bowtie2index/GRCh38
+bowtie2-build --threads 5 ./reference/GRCh38.p14.genome.fa ./reference/bowtie2index/GRCh38
 
-hisat2-build -p 5 GRCh38.p14.genome.fa ./reference/hisat2index/GRCh38
+hisat2-build -p 5 ./reference/GRCh38.p14.genome.fa ./reference/hisat2index/GRCh38
 #Download and unzip annotation file
 wget -c https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.annotation.gtf.gz -P ./reference/geneanno
 
@@ -160,6 +160,7 @@ In short, please unzip the raw data to *_1.fastq *_2.fastq format and place in t
 ---
 
 ### **The subsequent analysis steps should be referred to the readme files of each process.**
+
 
 
 
