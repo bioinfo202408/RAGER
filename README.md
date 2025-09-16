@@ -98,6 +98,8 @@ gunzip ./reference/geneanno/gencode.vM25.annotation.gtf.gz
 RAGER has been verified to have excellent functionality in datasets GSE85632 and GSE261119.
 Raw sequencing data were downloaded from the GEO database. From GSE85632 dataset, we selected specific SRR files (SRR4032350, SRR4032351, SRR4032352, SRR4032353,SRR4032269, SRR4032270, SRR4032271, SRR4032272) relevant to our analysis, resulting in a total of 16 fastq files.
 
+From GSE261119 dataset, we selected specific SRR files (RNAseq:SRR28264346,SRR28264347,SRR28264348,SRR28264349;ATACseq:SRR28263042,SRR28263043,SRR28263044,SRR28263045) relevant to our analysis, resulting in a total of 16 fastq files.
+
 SRR4032350-SRR4032353 is RANseq data, please save fastqfile to `./datasets/RNAseq/fastqfile` directory. Use the SRR4032350 file as an example. 
 
 This is a mouse data,navigate to the `PROJECT/RAGER/mouse` folder.
@@ -160,6 +162,7 @@ In short, please unzip the raw data to *_1.fastq *_2.fastq format and place in t
 ---
 
 ### **The subsequent analysis steps should be referred to the readme files of each process.**
+
 
 
 
