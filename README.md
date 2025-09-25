@@ -57,12 +57,15 @@ conda env create -f rager.yml
 We have provided a complete Conda environment file (**`rager.yml`**) in the GitHub repository, which includes all the dependencies required for RAGER. Users can download this file, optionally modify the environment name parameter (default `"rager"`), and create the environment using Conda. In addition, **MEME Suite AME** (v5.5.7) and the R package **`genekitr`** need to be installed separately.
 
  **1). MEME Suite AME**
+ 
 **MEME Suite AME** is one of the tools required for analysis, and its installation requires root permission. Please refer to the following link for the installation guide: [MEME Suite AME (v5.5.7)](https://meme-suite.org/meme/meme_5.5.7/). Choose the appropriate installation method based on your environment.
 
 ---
 
  **2). Installing the R Package `genekitr`**
+ 
 The R package **`genekitr`** is a crucial dependency for the analysis but cannot be installed via Conda. After setting up and activating the Conda environment, you need to install `genekitr` manually in R. Follow the steps below:
+
  **Step 1: Activate the Conda environment**
 ```bash
 conda activate rager
@@ -215,6 +218,7 @@ In short, please unzip the raw data to *_1.fastq *_2.fastq format and place in t
 ---
 
 ### **The subsequent analysis steps should be referred to the readme files of each process.**
+
 
 
 
