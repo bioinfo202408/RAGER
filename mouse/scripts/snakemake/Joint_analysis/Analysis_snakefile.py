@@ -230,7 +230,7 @@ rule sharedDownGene_INPromote_GSEA:
         DEgene=f"{config['input_files']['deg_csv']}"
     output:
         GOenrich=f"{config['params']['enrichment_analysis']['promoter_down_dir']}/sharedDownGene_InPromote_gsea_GOenrich.csv",
-        GOrds==f"{config['params']['enrichment_analysis']['promoter_down_dir']}/sharedDownGene_InPromote_gsea_GOenrich.rds",
+        GOrds=f"{config['params']['enrichment_analysis']['promoter_down_dir']}/sharedDownGene_InPromote_gsea_GOenrich.rds",
         KEGGenrich=f"{config['params']['enrichment_analysis']['promoter_down_dir']}/sharedDownGene_InPromote_gsea_KEGGenrich.csv",
         KEGGrds=f"{config['params']['enrichment_analysis']['promoter_down_dir']}/sharedDownGene_InPromote_gsea_KEGGenrich.rds"
     shell:
@@ -813,3 +813,4 @@ rule TF_heatmap_for_sharedDownEnhancer:
             {params.down_padj} \
             {output.heatmap}
         """
+
