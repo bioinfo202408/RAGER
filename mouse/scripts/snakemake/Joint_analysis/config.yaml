@@ -28,7 +28,7 @@ input_files:
   up_peak_xls: "datasets/ATACseq/macs2file/ATAC_A_vs_ATAC_N/ATAC_A_vs_ATAC_N_peaks.xls"
   down_peak_xls: "datasets/ATACseq/macs2file/ATAC_N_vs_ATAC_A/ATAC_N_vs_ATAC_A_peaks.xls"
   
-  deg_csv: "datasets/RNAseq/stringtiefile/A_vs_N_DEG.csv"
+  deg_csv: "datasets/RNAseq/stringtiefile/RNA_A_vs_RNA_N_DEG.csv"
 
 # === Sample information ===
 samples:
@@ -79,3 +79,4 @@ params:
     promoter_down_dir: "datasets/Promoter_region_analysis/Regulation_analysis/Down"
     enhancer_up_dir: "datasets/Enhancer_region_analysis/Regulation_analysis/Up"
     enhancer_down_dir: "datasets/Enhancer_region_analysis/Regulation_analysis/Down"
+
