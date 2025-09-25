@@ -56,19 +56,19 @@ conda env create -f rager.yml
 ```
 We have provided a complete Conda environment file (**`rager.yml`**) in the GitHub repository, which includes all the dependencies required for RAGER. Users can download this file, optionally modify the environment name parameter (default `"rager"`), and create the environment using Conda. In addition, **MEME Suite AME** (v5.5.7) and the R package **`genekitr`** need to be installed separately.
 
-### **1. MEME Suite AME**
+ **1). MEME Suite AME**
 **MEME Suite AME** is one of the tools required for analysis, and its installation requires root permission. Please refer to the following link for the installation guide: [MEME Suite AME (v5.5.7)](https://meme-suite.org/meme/meme_5.5.7/). Choose the appropriate installation method based on your environment.
 
 ---
 
-### **2. Installing the R Package `genekitr`**
+ **2). Installing the R Package `genekitr`**
 The R package **`genekitr`** is a crucial dependency for the analysis but cannot be installed via Conda. After setting up and activating the Conda environment, you need to install `genekitr` manually in R. Follow the steps below:
-#### **Step 1: Activate the Conda environment**
+ **Step 1: Activate the Conda environment**
 ```bash
 conda activate rager
 ```
 
-#### **Step 2: Open R or RStudio**
+ **Step 2: Open R or RStudio**
 If you are working in a terminal, you can start R by simply typing:
 
 ```bash
@@ -80,14 +80,14 @@ This will enter the R interactive environment in the terminal interface.
 Alternatively, if you are using RStudio, you can launch it from your graphical user interface (GUI) and open a new R script or console session.
 
 
-#### **Step 3: Install `genekitr` from CRAN**
+ **Step 3): Install `genekitr` from CRAN**
 Install the stable version of `genekitr` using the following command:
 
 ```r
 install.packages("genekitr")
 ```
 
-#### **Step 4: Verify the installation**
+ **Step 4): Verify the installation**
 After installation, ensure the package has been successfully installed:
 
 ```r
@@ -96,7 +96,7 @@ packageVersion("genekitr")
 ```
 
 
-#### **Step 5: Exit the R environment**
+ **Step 5): Exit the R environment**
 To exit R from the terminal or RStudio, run the following command:
 
 ```r
@@ -215,6 +215,7 @@ In short, please unzip the raw data to *_1.fastq *_2.fastq format and place in t
 ---
 
 ### **The subsequent analysis steps should be referred to the readme files of each process.**
+
 
 
 
