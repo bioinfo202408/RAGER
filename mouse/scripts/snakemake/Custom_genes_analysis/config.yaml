@@ -1,7 +1,7 @@
 # config.yaml
 input_files:
   custom_genes: "datasets/Custom_genes_analysis/custom_genes.txt"
-  deg_csv: "datasets/RNAseq/stringtiefile/A_vs_N_DEG.csv"
+  deg_csv: "datasets/RNAseq/stringtiefile/RNA_A_vs_RNA_N_DEG.csv"
 # === File paths configuration ===
 paths:
   dir: "datasets/Custom_genes_analysis"
@@ -13,4 +13,5 @@ paths:
 params:
   log2fc_up: 1
   log2fc_down: -1
+
   padj: 0.05
