@@ -181,7 +181,7 @@ TPT1
 TRA2B
 TUBA4A
 ```
-**Note：**we applied the Custom Analysis Module to a user-provided gene set derived from the original study of GSE261119. The above genes are 92 differentially expressed genes related to erythropoiesis and MAPK signaling pathways. We tested with these genes and got the expected results.
+**Note**:we applied the Custom Analysis Module to a user-provided gene set derived from the original study of GSE261119. The above genes are 92 differentially expressed genes related to erythropoiesis and MAPK signaling pathways. We tested with these genes and got the expected results.
 
 **File format requirements**:
 - One gene symbol per line
@@ -461,3 +461,4 @@ Rscript --vanilla ./scripts/custom_plot/Motif_enrich_tocytoscape_demo.R ./Datase
 
 
 ---
+
