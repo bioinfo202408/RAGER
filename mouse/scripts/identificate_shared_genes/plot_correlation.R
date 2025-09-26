@@ -66,8 +66,8 @@ fit <- lm(ATACLog2FC ~ ExpLog2FC, data = plotData)
 p_value <- summary(fit)$coefficients[2, 4]
 r_squared <- summary(fit)$r.squared
 
-p_text <- paste0("P = ", formatC(p_value, format = "e", digits = 2))
-r2_text <- paste0("R² = ", round(r_squared, 3))
+p_text <- paste0("p = ", formatC(p_value, format = "e", digits = 2))
+r2_text <- paste0("r = ", round(r_squared, 3))
 
 pdf(args[12], width=5, height=4)
 
