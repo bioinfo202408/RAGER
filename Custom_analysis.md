@@ -95,7 +95,93 @@ AHSP
 ALAS2
 APOE
 ATP6V1E1
+AZU1
+BCL2L1
+C1QTNF4
+CALB1
+CD164
+CDK6
+CDKN1A
+CFL1
+CNP
+COMT
+COPS5
+CTSZ
+DDX23
+EIF1AX
+EIF4E
+ELANE
+ENO1
+EPB42
+FECH
+FKBP3
+FOS
+GAPDH
+GATA1
+GLOD4
+GMPR2
+GPX1P1
+GRHPR
+GYPC
+HBZ
+HBB
+HBA1
+HNRNP2B1
+JUN
+KLF1
+LDHA
+MAPRE2
+MDH1
+METTL7A
+MT-ATP6
+MT-ND3
+MT-ND4L
+MT-ND6
+MYC
+NDUFC2
+NPEPPS
+NSFL1C
+PCBP2
+PCNA
+PDHX
+PEBP1P2
+PEPD
+PGK1
+PKM
+POLDIP3
+PRDX3
+PRTN3
+PTMA
+RANBP1
+RBM22
+RPL15P3
+RPL37A
+RPS27AP16
+RPS28P7
+RPS3AP6
+RPS5
+RUVBL1
+SEC22B
+SEC61A1
+SELENBP1
+SF3A2
+SGTA
+SLC25A11
+SLC2A1
+SLC4A1
+SMC3
+SRSF7
+STXBP2
+TALDO1
+TFRC
+TMEM126A
+TMEM33
+TP53
+TPT1
+TRA2B
+TUBA4A
 ```
+**Note：**we applied the Custom Analysis Module to a user-provided gene set derived from the original study of GSE261119. The above genes are 92 differentially expressed genes related to erythropoiesis and MAPK signaling pathways. We tested with these genes and got the expected results.
 
 **File format requirements**:
 - One gene symbol per line
@@ -372,5 +458,6 @@ Rscript --vanilla ./scripts/custom_plot/Motif_enrich_tocytoscape_demo.R ./Datase
 1. Before selecting TF, you need to look at ``enriched_tfs_list.txt`` and select TFs whose binding motifs are significantly enriched.
 2. `TF_list`:select the Tfs you are interested in.
 3. `tf_gene_network.graphml`:This result you need to import Cytoscape software, where you can make the visualizations you want.For details, please refer to [Cytoscape](https://cytoscape.org/welcome.html).
+
 
 ---
