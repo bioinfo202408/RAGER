@@ -494,8 +494,9 @@ This step identifies differentially expressed genes between conditions using sta
 - Normalized counts: `gene_count_matrix.count`
 
 **Outputs**  
-- Differential expression results: `Exper_vs_ctr_DEG.csv.txt`
+- Differential expression results: `RNA_A_vs_RNA_N_DEG.csv.txt`
 
 **Output directory**  
 
 - `/datasets/RNAseq/stringtiefile`
+
