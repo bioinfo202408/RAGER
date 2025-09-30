@@ -402,6 +402,7 @@ We performed transcription factor motif enrichment analysis of promoter sequence
 **Outputs**
 - `Regulation_analysis/Up/motif_enrich_result/`
 - `Regulation_analysis/Down/motif_enrich_result`
+
 **Output directory**
 - `./datasets/Promoter_region_analysis/Regulation_analysis/`
 
@@ -524,6 +525,7 @@ Annotates enhancer regions that are associated with differentially expressed gen
 **Outputs**
 - `annotation_of_enh_for_potential_regulate_UpGene.bed`: Enahncers annotation of potentially regulated up-regulated genes
 - `annotation_of_enh_for_potential_regulate_DownGene.bed`: Enahncers annotation of potentially regulated down-regulated genes
+
 **Output directory**
 - `./datasets/Enhancer_region_analysis/`
 
@@ -549,6 +551,7 @@ Calculates normalized TPM signal intensities for enhancer regions associated wit
 - `enh_sortedRegions_for_UPgene.bed`: Sorted enhancer regions
 - `enh_expr_signal_for_DOWNgene.tab`: Tab-delimited signal table for enhancers
 - `enh_sortedRegions_for_DOWNgene.bed`: Sorted enhancer regions
+
 **Output directory**
 - `./datasets/Enhancer_region_analysis/`
 
@@ -722,4 +725,5 @@ Generates heatmap visualizations showing expression patterns of transcription fa
 - `Regulation_analysis/Down/shared_DownEnhancer_tfs_heatmap_RNAseqExpr.pdf`: TF expression heatmap for enhancer-associated downregulated gene analysis
 
 **Output directory**
+
 - `./datasets/Enhancer_region_analysis/Regulation_analysis/`
