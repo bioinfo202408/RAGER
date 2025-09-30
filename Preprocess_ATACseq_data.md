@@ -531,7 +531,7 @@ Principal Component Analysis (PCA) is performed to visualize the overall structu
 
 **Outputs**  
 - 2D PCA plot: `2DPCA_PC1_PC2.pdf` `2DPCA_PC1_PC3.pdf` `2DPCA_PC2_PC3.pdf`
-- 2D PCA plot: `3DPCA.pdf.pdf`
+- 3D PCA plot: `3DPCA.pdf.pdf`
 
 **Output directory**  
 - `./datasets/ATACseq/bowtie2file/`
@@ -582,7 +582,7 @@ This step annotates the called peaks with genomic features like promoters, enhan
 - Peak files: `ATACexperiment_vs_ATACctr_summits.bed`, `ATACctr_vs_ATACexperiment_summits.bed`
 
 **Outputs**  
-- Annotated peak tables: `Experiment_vs_ctr_peak.csv`, `Ctr_vs_experiment_peak.csv`
+- Annotated peak tables: `ATACexperiment_vs_ATACctr_peak.csv`, `ATACctr_vs_ATACexperiment_peak.csv`
 
 **Output directory**  
 - `./datasets/ATACseq/macs2file/`
@@ -597,7 +597,8 @@ This step creates bar plots to visualize the number and distribution of differen
 
 **Outputs**  
 - Diverging bar plot: `peaks_diverging_bar.pdf`
-- All peaks bar plot: `all_peaks_bar.pdf`
+- All peaks bar plot: `all_peak_bar.pdf`
 
 **Output directory**  
 - `./datasets/ATACseq/macs2file/`
+
