@@ -9,6 +9,7 @@
 3. [Preprocess ATACseq data](https://github.com/bioinfo202408/RAGER/blob/main/Preprocess_ATACseq_data.md) 
 4. [Joint analysis](https://github.com/bioinfo202408/RAGER/blob/main/Joint_analysis.md)
 5. [Custom analysis](https://github.com/bioinfo202408/RAGER/blob/main/Custom_analysis.md)
+6. [UI](https://github.com/bioinfo202408/RAGER/blob/main/RAGER_UI.md)
 
 # **Quick start**
 ## System requirements:
@@ -113,7 +114,7 @@ R will prompt you to save the workspace:
 ---
 
 ## Download static reference files
-RAGER is dependent on reference files which can be found for the supported species listed below: download link [hg38](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/) [mm10](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/)
+RAGER is dependent on reference files which can be found for the supported species listed below: download link [hg38](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/) [mm10](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/) [TAIR10](https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-62/)
 
 
 1. If you are analyzing human data,navigate to the `PROJECT/RAGER/human` folder.
@@ -260,6 +261,7 @@ In short, please unzip the raw data to *_1.fastq *_2.fastq format and place in t
 ---
 
 ### **The subsequent analysis steps should be referred to the readme files of each process.**
+
 
 
 
