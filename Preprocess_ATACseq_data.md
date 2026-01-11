@@ -4,6 +4,7 @@
 3. [Preprocess ATACseq data](https://github.com/bioinfo202408/RAGER/blob/main/Preprocess_ATACseq_data.md) 
 4. [Joint analysis](https://github.com/bioinfo202408/RAGER/blob/main/Joint_analysis.md)
 5. [Custom analysis](https://github.com/bioinfo202408/RAGER/blob/main/Custom_analysis.md)
+6. [UI](https://github.com/bioinfo202408/RAGER/blob/main/RAGER_UI.md)
 
 ## **Quick Start**
 
@@ -612,4 +613,5 @@ This step creates bar plots to visualize the number and distribution of differen
 
 **Output directory**  
 - `./datasets/ATACseq/macs2file/`
+
 
