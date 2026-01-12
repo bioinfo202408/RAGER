@@ -184,7 +184,7 @@ cd ~/PROJECT/RAGER/plant
 
 #2. Upload/put your reference genome fasta file into ./reference
 #   Example file name: custom_reference.fa
-#   (Make sure the file is in FASTA format and ends with .fa or .fasta)
+#   (Make sure the file is in FASTA format and ends with .fa)
 
 #3. Build indexes for your custom reference genome
 #   Replace ./reference/custom_reference.fa with your real fasta file name
@@ -261,6 +261,7 @@ In short, please unzip the raw data to *_1.fastq *_2.fastq format and place in t
 ---
 
 ### **The subsequent analysis steps should be referred to the readme files of each process.**
+
 
 
 
