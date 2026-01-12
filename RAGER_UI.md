@@ -112,12 +112,10 @@ Each result item includes a **Download** button so you can download outputs dire
 
 * **Configuration details**
   For detailed explanations of how to modify the `config.yaml` file, please refer to the corresponding module documentation:
-
-  * *Preprocess RNAseq data*
-  * *Preprocess ATACseq data*
-  * *Joint analysis*
-  * *Custom analysis*
-  
+1. [Preprocess RNAseq data](https://github.com/bioinfo202408/RAGER/blob/main/Preprocess_RNAseq_data.md)
+2. [Preprocess ATACseq data](https://github.com/bioinfo202408/RAGER/blob/main/Preprocess_ATACseq_data.md) 
+3. [Joint analysis](https://github.com/bioinfo202408/RAGER/blob/main/Joint_analysis.md)
+4. [Custom analysis](https://github.com/bioinfo202408/RAGER/blob/main/Custom_analysis.md)
     Each module has its own Markdown file describing the required parameters and recommended settings.
 
 * **Conda environment**
@@ -130,6 +128,7 @@ Each result item includes a **Download** button so you can download outputs dire
   This environment provides all required dependencies, including Snakemake, Streamlit, and bioinformatics tools used in the workflows.
 
 ---
+
 
 
 
