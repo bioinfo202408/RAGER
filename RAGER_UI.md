@@ -116,7 +116,8 @@ Each result item includes a **Download** button so you can download outputs dire
 2. [Preprocess ATACseq data](https://github.com/bioinfo202408/RAGER/blob/main/Preprocess_ATACseq_data.md) 
 3. [Joint analysis](https://github.com/bioinfo202408/RAGER/blob/main/Joint_analysis.md)
 4. [Custom analysis](https://github.com/bioinfo202408/RAGER/blob/main/Custom_analysis.md)
-    Each module has its own Markdown file describing the required parameters and recommended settings.
+
+Each module has its own Markdown file describing the required parameters and recommended settings.
 
 * **Conda environment**
   Before running any analysis or launching the UI, make sure to activate the RAGER conda environment:
@@ -128,6 +129,7 @@ Each result item includes a **Download** button so you can download outputs dire
   This environment provides all required dependencies, including Snakemake, Streamlit, and bioinformatics tools used in the workflows.
 
 ---
+
 
 
 
