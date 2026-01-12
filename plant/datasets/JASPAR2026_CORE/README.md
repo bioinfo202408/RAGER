@@ -1,1 +1,0 @@
-**This directory stores the motif data.** 
