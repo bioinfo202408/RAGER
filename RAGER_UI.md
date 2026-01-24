@@ -94,6 +94,8 @@ Inside each module page (tab), the workflow configuration is controlled by a `co
 4. **View logs**: the UI prints the running log in real time, and a full log is available in the **Logs** section.
 
 > Tip: You can click **Reload** to discard current edits and reload the original `config.yaml` from disk.
+<img width="988" height="834" alt="image" src="https://github.com/user-attachments/assets/61b02531-234b-431c-ae8f-778f537d23b5" />
+
 
 ---
 
@@ -129,6 +131,7 @@ Each module has its own Markdown file describing the required parameters and rec
   This environment provides all required dependencies, including Snakemake, Streamlit, and bioinformatics tools used in the workflows.
 
 ---
+
 
 
 
