@@ -1,0 +1,62 @@
+# config.yaml
+
+paths:
+  base_dir: "datasets"
+  scripts_dir: "scripts"
+  rnaseq_base_dir: "datasets/RNAseq"
+  fastq_dir: "datasets/RNAseq/fastqfile"
+  qc_dir: "datasets/RNAseq/quality_control_file"
+  hisat2_dir: "datasets/RNAseq/hisat2file"
+  stringtie_dir: "datasets/RNAseq/stringtiefile"
+  index_dir: "reference/hisat2index"
+
+references:
+  gtf_file: "reference/geneanno/Triticum_aestivum.IWGSC.62.gtf"
+
+samples:
+  SRRxxxxxx1: 
+    type: "paired"
+    group: "RNA_A"
+    label: "RNA_A1"
+  SRRxxxxxx2: 
+    type: "paired"
+    group: "RNA_A"
+    label: "RNA_A2"
+  SRRxxxxxx3: 
+    type: "paired"
+    group: "RNA_N"
+    label: "RNA_N1"
+  SRRxxxxxx4: 
+    type: "paired"
+    group: "RNA_N"
+    label: "RNA_N2"
+
+params:
+  trim_galore:
+    phred: 33
+    quality: 25
+    length_paired: 35
+    length_single: 30
+    stringency_paired: 3
+    stringency_single: 1
+  
+  hisat2:
+    threads: 5
+    index_name: "Triticum_aestivum_IWGSC"
+  
+  analysis_groups:
+    group_names: ["RNA_A", "RNA_N"]
+    sample_replicates: [2, 2]
+  
+  deseq2:
+    control_group: "RNA_N"
+    treatment_group: "RNA_A"
+
+resources:
+  default_threads: 10
+  hisat2_threads: 5
+  memory_gb: 100
+
+output_dirs:
+  hisat2_subdir: "hisat2file"
+  stringtie_subdir: "stringtiefile"
